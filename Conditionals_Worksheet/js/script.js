@@ -40,3 +40,21 @@ if (username != "admin") { //Check id username is incorrect
 if (password != "fuzzyduck") { //Check id password is incorrect
 	console.log("Password does not match our records.");
 }
+
+//Movie Ticket Price
+
+var time = prompt("What time is your movie showing?"); //User prompt for movie time to determine time discount
+var age = prompt("What is your age?"); //User prompt for movie time to determine age discount
+
+var timeDiscount = false; //Default Boolean
+var ageDiscount = false; //Default Boolean
+
+if (time <= 5 && time >= 3) { //Determine if the user is seeing the movie between 3 and 5
+	timeDiscount = true; //Set true if so
+}
+
+if (age >= 55) { //Determine if the user is above or equal to the age fo 55
+	ageDiscount = true; //They get a discount if so
+}
+
+(timeDiscount || ageDiscount) ? console.log("Your ticket price is $7.") : console.log("Your ticket price is $12."); //Ternary operator for discount outcome
