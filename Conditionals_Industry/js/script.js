@@ -5,9 +5,17 @@ var employees = prompt("How many employees will need computers?"); //This will b
 
 var perEmpBudget = budget / employees; //Get the total amount you can spend per employee
 
+if (budget === ""){ //Check if budget is empty
+	var budget = prompt("Oops! It looks like you forgot to set a budget. Please enter one now:"); //Prompt the user to input a budget value
+}
+
+if (employees === ""){ //Check if employees is empty
+		var employees = prompt("Oops! It looks like you forgot to set the number of employees need computers. Please enter this now:"); //Prompt the user to input a employees value
+}
+
 if (perEmpBudget >= 900 ) { //If per employee budget is greater than $900
 	console.log("You are able to buy everyone a MacBook Air!"); //Outcome for budget $900
-	} else if (perEmpBudget >= 1500) { //Outcome for budget $1500
+} else if (perEmpBudget >= 1500) { //Outcome for budget $1500
 		console.log("You are able to buy everyone a MacBook Pro!"); // Result of a Budget between 1500 and 2000
 	} else if (perEmpBudget >= 2000) { //Outcome for budget $2,000
 		console.log("You are able to buy everyone a Mac Tower!"); // Result of a Budget of $2000 +

@@ -8,17 +8,16 @@ var completePercent = 100; //default value at 100 percent of goal
 
 completePercent /= goal; //This will give the actual percent of goal hit. This will only display i fthe use rhas not hit their calories burned goal
 
-if (milesRan == "") { //Check if miles ran is empty
+if (milesRan === "") { //Check if miles ran is empty
 		var milesRan = prompt("Oops! It looks like you forgot to enter the amount of miles your ran today. Please enter them now:"); //Prompt the user to input a miles value
-	} else if (weight == "") { //Check if weight is empty
-		var weight = prompt("Oops! It looks like you forgot to enter weight. Please enter it now:"); //Prompt the user to input a weight value
-	} else if (goal == "") { //Check if goal is empty
-		var goal = prompt("Oops! It looks like you forgot to enter your calorie burned goal. Please enter one now:"); //Prompt the user to input a goal value
-	} else if (caloriesBurned >= goal) { //if is checking to see if total calories burned are greater than or equal to the user's goal
-	console.log("Congratulations! You have burned " + caloriesBurned +" calories. You have reached your goal."); //output if the user has achieved their calories burned goal
-	} else if (caloriesBurned >= goal * 2) { //if is checking if the user has more than doubled their goal by outputing if caloriesBurned is greater than or eaul to 2xgoal
-		console.log("You actually hit more than double your goal. Woot woot!"); //Success message if user has hit double or more of their goal
-	} else { //else statement checks if user has hit their goala nd outputs the percent of the goal they have completed
-	console.log("Keep those feet moving! You have only completed " + completePercent +"% of your burned goal");
 }
 
+if (weight === "") { //Check if weight is empty
+		var weight = prompt("Oops! It looks like you forgot to enter weight. Please enter it now:"); //Prompt the user to input a weight value
+}
+
+if (goal === "") { //Check if goal is empty
+		var goal = prompt("Oops! It looks like you forgot to enter your calorie burned goal. Please enter one now:"); //Prompt the user to input a goal value
+}
+
+(caloriesBurned >= goal) ? console.log("Congratulations! You have burned " + caloriesBurned +" calories. You have reached your goal.") : console.log("Keep those feet moving! You have only completed " + completePercent +"% of your burned goal"); //Ternary is checking to see if total calories burned are greater than or equal to the user's goal
