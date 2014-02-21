@@ -16,4 +16,4 @@ if (flexible === ""){ //Check if flexible var is empty
 	flexible = prompt("Oops! It looks like you forgot say if you're flexible or not. Please enter yes or no:"); //Prompt user to insert an input for var flexibility
 }
 
-(weight < 200 && holdBreath > 120 && flexible === "yes") ? console.log("Congratulations! You would be able to survive a Houdini under water straight jacket stunt.") : console.log("If you were to attempt a Houdini water tank straight jack stunt, you would be either too big to get out of the tank and you would drown before you could squeeze your way out of the straight jacket. Tough break.") //Logical operator & Ternary to qulify if the user can perform the Houdini stunt
+(weight < 200 && holdBreath > 120 && flexible === "yes") ? console.log("Congratulations! You would be able to survive a Houdini under water straight jacket stunt.") : console.log("If you were to attempt a Houdini water tank straight jack stunt, you would be either be too big to get out of the tank and you would drown before you could squeeze your way out of the straight jacket. Tough break.") //Logical operator & Ternary to qulify if the user can perform the Houdini stunt
