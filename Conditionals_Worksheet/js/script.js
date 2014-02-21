@@ -1,5 +1,7 @@
 //Guerra, Andre 02/20/14 Conditionals - Worksheet
 
+//Temperature Converter - Group 1
+
 var temp = prompt("Enter a temperature to convert:"); //Beginning temp to convert
 var unit = prompt("Enter F or C for starting temp unit:"); //Starting unit to conver from
 
@@ -20,4 +22,21 @@ if (unit === "C") { //Convert C to F
 
 if (unit === "F") { //Convert F to C
 	console.log("The temparature you entered converts into " + cTemp + " degrees celsius.");
+}
+
+//Check the Login - Group 2
+
+var username = prompt("Please enter your username:"); //User enter username
+var password = prompt("Please enter your password:"); //User enters password
+
+if (username === "admin" && password === "fuzzyduck") { //Check if username and password is correct
+	console.log("Welcome, " + username + "!"); //Welcome message
+}
+
+if (username != "admin") { //Check id username is incorrect
+	console.log("User not found. Try again.");
+}
+
+if (password != "fuzzyduck") { //Check id password is incorrect
+	console.log("Password does not match our records.");
 }
