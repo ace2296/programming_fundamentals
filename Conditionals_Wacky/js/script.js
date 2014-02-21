@@ -1,7 +1,7 @@
 //Guerra, Andre 02/20/14 Conditionals - Wacky
 
 var holdBreath = prompt("How long, in seconds, can you hold your breath?"); //Set first possible true for logical operator
-var weight = prompt("How much do you weight?"); //Set second possible true for logical operator
+var weight = prompt("How much do you weigh? Insert without unit"); //Set second possible true for logical operator
 var flexible = prompt("Are you flexible? Enter yes or no"); //Set third possible true for logical operator
 
 if (holdBreath === ""){ //Check if holdBreath var is empty
