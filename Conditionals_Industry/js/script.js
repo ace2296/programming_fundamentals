@@ -1,15 +1,16 @@
 //Guerra, Andre 02/20/14 Conditionals - Industry
 
-var leadGoal = prompt("What is your desired lead goal?");
-var visits = prompt("How many website visitors did you get this month?");
-var blogs = prompt("How many blogs did you publish?");
-var leadsGenerated = prompt("How many leads did you recieve from your blogs this month?");
-var leadActual = (visits / blogs) * conversionPercent;
-var conversionPercent = 0.10;
-var remainingLeads = leadGoal % leadsGenerated; 
+var budget = prompt("What is your total computer budget?");
+var employees = prompt("How many employees will need computers?");
 
-if (leadsGenerated >= leadGoal ) {
-	console.log("Congratulations! You've hit your lead goal with a total of" + leadsGenerated + " leads.")
-} else {
-	console.log("It looks like your " + remainingLeads + " leads away from hitting your lead goal.") ;
+var perEmpBudget = budget / employees;
+
+if (perEmpBudget >= 900 ) {
+	console.log("You are able to buy everyone a MacBook Air!")
+	} else if (perEmpBudget >= 1500) {
+		console.log("You are able to buy everyone a MacBook Pro!");
+	} else if (perEmpBudget >= 2000) {
+		console.log("You are able to buy everyone a Mac Tower!");
+	} else {
+	console.log("It looks like your buying everyone a PC.") ;
 }
