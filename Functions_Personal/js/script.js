@@ -7,16 +7,15 @@ var calcBlinks = function(blinksPM) {
 	return blinks;
 }
 
-var dryness = prompt('Please enter the amount of times you blink per minute' + calcBlinks(15));
+var totalBlinks = calcBlinks(prompt('Please enter the amount of times you blink per minute'));
 
-console.log(dryness);
+console.log("You blink a total of " + totalBlinks + " links per day.");
 
-if (dryness == 11,400) {
-	console.log("You blink the average amount per day.");
+if (totalBlinks <= 11400 && totalBlinks >= 10500) {
+	console.log("You are average.");
 	
-	} else if (dryness < 11,400) {
-		console.log("You are below the blinking average per day.");
-	}	
+	} else if (totalBlinks < 10500) {
+		console.log("You are below average.");
 } else {
 	console.log("You are above the blinking average per day.");
 }
