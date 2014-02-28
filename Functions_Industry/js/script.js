@@ -2,7 +2,7 @@
 
 //px to em converter with 16px base pixel size
 
-var unit = prompt("Which unit do you want to start with in your convertion? Please enter em or px."); //Kickoff the if statement/function
+var unit = prompt("Which unit do you want to start with in your conversion? Please enter em or px."); //Kickoff the if statement/function
 
 if (unit === "px") {
 	function pxConverter(px) { //Set function for user to enter a pixel value
